@@ -3,7 +3,7 @@ Kaggle Study 계획표
 C3 인 'Natural Language Processing with Disaster Tweets' 시작 + Starter 병행
 
 - [1주] EDA (Competition 이해 및 insight 얻기)
-    - Starter - Intro to ML, Intermediate ML, Data Visualization
+    - Starter - [Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning), Intermediate ML, Data Visualization
     - '[Twitter sentiment Extraction-Analysis,EDA and Model](https://www.kaggle.com/tanulsingh077/twitter-sentiment-extaction-analysis-eda-and-model)' '[EDA and models](https://www.kaggle.com/artgor/eda-and-models)' 따라해보기
 - [2주] Baseline 모델 (framework 고려) 리뷰 및 학습
     - Data Cleaning, Feature Engineering, ML Explainability
@@ -24,3 +24,13 @@ C3 인 'Natural Language Processing with Disaster Tweets' 시작 + Starter 병�
 4. [Twitter sentiment Extraction-Analysis,EDA and Model](https://www.kaggle.com/tanulsingh077/twitter-sentiment-extaction-analysis-eda-and-model)
 5. How to not overfit?
 6. Dealing with very small datasets
+
+
+
+
+What's Done
+[2021.01.18]
+  - Intro to Machine Learning: How to Submit using saved version, How to
+  preprocess, build model using RandomForest, Data split with train_test_split.
+    - Submit with RandomForestRegressor.
+  - Start to see Mr_KnowNothing's [Twitter sentiment Extaction-Analysis,EDA and Model](https://www.kaggle.com/tanulsingh077/twitter-sentiment-extaction-analysis-eda-and-model)
