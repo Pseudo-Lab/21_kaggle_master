@@ -23,4 +23,4 @@
 
 - 1주차 : 노트북 리뷰
     - [Chest X-ray Abnormalities Doctor-EDA](https://www.kaggle.com/anantgupt/chest-x-ray-abnormalities-doctor-eda)
-    - 한글 번역 내용 Link
+    - [한글 번역 내용](./chest-x-ray-abnormalities-doctor-eda-korean-trans.ipynb)
