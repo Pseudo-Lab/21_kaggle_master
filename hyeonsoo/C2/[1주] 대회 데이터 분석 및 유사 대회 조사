@@ -1,0 +1,56 @@
+# [1주] 대회 데이터 분석 및 유사 대회 조사
+
+- **[Severstal: Steel Defect Detection](https://www.kaggle.com/c/severstal-steel-defect-detection) (2019, Kaggle)**
+    - [1st place](https://www.kaggle.com/c/severstal-steel-defect-detection/discussion/114254)
+        - Classification: 결함이 있는지 없는지 판단. (Dropout augmentation이 효과가 크다고 함.)
+        - Segmentation: weighted loss, BCE + Dice, ensemble, postprocesssing (remove small object)
+        - Pseudo-Label: Classification & Segmentation이 모두 결함이 있다고 판단한 이미지들만 labeling
+    - [4th place](https://www.kaggle.com/c/severstal-steel-defect-detection/discussion/114716)
+        - multi-task learning: classification + segmentation
+        - Inference에서 classification과 segmentation 결과 합치기 (mask.sigmoid() * classifier.sigmoid())
+        - Focal Loss & BCE + Focal Loss
+        - Ensemble: densenet, efficientnet, resnet, seresnext, FPN, UNet
+        - TTA
+        - remove small mask
+        - Best model selection: mask가 있는 image들의 dice score를 기준으로 함
+    - [5th place](https://www.kaggle.com/c/severstal-steel-defect-detection/discussion/117208)
+        - 전처리: gray → color image
+        - Augmentation: negative sample이 많기때문에 학습 초반에는 confidence가 낮아 threshold를 임의로 낮게 잡아야함. 이 문제는 갈수록 없어지지만 overfitting의 문제가 있음.
+        crop and resize back, contrast and brightness, gamma correction, blurring and sharpening, scale and shift (no rotation and shearing), horizontal and vertical mirroring
+        - Model: 8 U-Net, remove false-positive with max probability pixel
+        - Training: 40-50 epoch BCE loss —> lovasz-hinge loss —> pseudo-labeling
+        - Test: training & test dataset은 다른 pipeline에서 취득됨. public testset을 clustering하여 threshold하여 pseudo-label을 만들 때 pixel 개수를 세어 해당 기준을 만듬. 2-step filtering.
+    - [7th place](https://www.kaggle.com/c/severstal-steel-defect-detection/discussion/114215)
+        - preprocess & agumentation
+            - mixup & label smoothing
+        - model
+            - efficient-b0,b4,b7 model
+            - cross entropy
+        - post-process
+            - different threshold for each class
+        - etc
+            - fine tuning on the full resolution
+        - didn't work
+            - SWA
+            - pseudo labeling
+            - classifier
+            - balanced sampler
+    - [8th place](https://www.kaggle.com/c/severstal-steel-defect-detection/discussion/114696)
+        - pre-process & augmentation
+            - Flipping and Random Brightness, Random Gamma, Random Contrast
+        - model
+            - FPN, U-Net
+        - training
+            - progressive learning: 256x256→full resolution
+            - encoder is frozen except batchnorm
+        - post-process
+            - [triple threshold](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/discussion/107824#latest-650999): top threshold → min contour area → bot threshold
+    - [9th place](https://www.kaggle.com/c/severstal-steel-defect-detection/discussion/114297)
+        - pre-process & augmentation
+            - crop
+        - model
+            - defect classifier
+            - segmentation: FPN
+        - traininig
+        - post-process
+            - different threshold
