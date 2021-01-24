@@ -2,7 +2,7 @@
 
 compete :  https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection
 
-my kernel (pleaze upvote :]) : 
+my kernel ( Don't forget to upvote :D )
 - eda : https://www.kaggle.com/wonjunpark/eda-vinbigdata-chest-x-ray-abnormalities-kor
 
 - [1, 2주] 문제 이해 및 정의, 데이터 전처리 및 분석
