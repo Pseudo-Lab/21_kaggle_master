@@ -1,4 +1,4 @@
-# 스터디 계획표
+# 김찬란의 스터디 계획표
 
 ### Active Competition - VinBigData Chest X-ray Abnormalities Detection
 - [x]  스터디 그룹 빌딩 (2주간)
