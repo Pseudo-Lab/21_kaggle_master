@@ -1,8 +1,9 @@
-# 스터디 계획표
+# 김찬란의 스터디 계획표
 
 ### Active Competition - VinBigData Chest X-ray Abnormalities Detection
 - [x]  스터디 그룹 빌딩 (2주간)
-- [ ]  [1, 2주] 문제 이해, 데이터 전처리 및 분석
+- [x]  [1주] [문제 이해, 데이터 전처리 및 분석](vbd-chest-x-ray-abnormalities-detection-eda.ipynb)
+- [ ]  [2주] 문제 이해, 데이터 전처리 및 분석
 - [ ]  [3, 4, 5주] 모델링 및 모델 학습
 - [ ]  [6주] 파라미터 튜닝 및 학습 (및 후처리)
 - [ ]  [7, 8주] 앙상블 및 스태킹
