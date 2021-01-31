@@ -1,7 +1,7 @@
 # 스터디 계획표
 ### Active Competition - VinBigData Chest X-ray Abnormalities Detection
 - [x] [1주] 문제 이해, 데이터 전처리 및 분석 (kor_visual_in_depth_eda_vinbigdata_{1,2_1,2_2}.ipynb)
-- [ ] [2주] 문제 이해, 데이터 전처리 및 분석
+- [x] [2주] 문제 이해, 데이터 전처리 및 분석 (kor_finding_data_issues_and_mislabeled_bounding_boxes.ipynb)
 - [ ] [3주] 모델링 및 모델 학습
 - [ ] [4주] 모델링 및 모델 학습
 - [ ] [5주] 모델링 및 모델 학습
