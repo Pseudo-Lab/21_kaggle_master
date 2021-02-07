@@ -4,7 +4,7 @@
 
 - [x]  [1주] 대회 데이터 분석 및 유사 대회 조사
 - [x]  [2주] 대회 데이터 분석 및 유사 대회 조사
-- [ ]  [3주] 모델링 및 유사 대회 조사
+- [x]  [3주] [모델링 및 유사 대회 조사](https://soomiles.github.io/2021/02/07/Solution-Summary-Prostate-cANcer-graDe-Assessment-PANDA-Challenge/)
 - [ ]  [4주] 모델링 및 유사 대회 조사
 - [ ]  [5주] 논문 조사 및 적용
 - [ ]  [6주] 논문 조사 및 적용
@@ -17,7 +17,7 @@
 
 - [x]  [1주] [노트북 작성 및 공유](https://www.kaggle.com/telljoy/vision-transformer-vit-tutorial-baseline)
 - [x]  [2주] [노트북 작성 및 공유](https://www.kaggle.com/telljoy/noisy-label-eda-with-cleanlab)
-- [ ]  [3주] 노트북 작성 및 공유
+- [x]  [3주] 노트북 작성 및 공유
 - [ ]  [4주] 노트북 작성 및 공유
 - [ ]  [5주] 노트북 작성 및 공유
 - [ ]  [6주] 노트북 작성 및 공유
